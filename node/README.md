@@ -21,7 +21,7 @@ const app = express();
 app.get('/users', (request, response) => {
     console.log('Iniciou')
     //response.send('Hello World');
-    response.json(['Nome1','Nome2','Nome3','Nome4'])
+    response.json({message: "Lista de Usuarios"});
 });
 
 app.listen(3333);
