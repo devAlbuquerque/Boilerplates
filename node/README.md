@@ -14,17 +14,23 @@ Apos os passos acima realizados, crie uma pasta **src** e um arquivo **server.ts
 ```
 server.ts
 
-import express from 'express';
+import express from "express";
 
 const app = express();
 
-app.get('/users', (request, response) => {
-    console.log('Iniciou')
-    //response.send('Hello World');
-    response.json({message: "Lista de Usuarios"});
-});
+app.listen(3000, () => console.log("Serve is Running"));
 
-app.listen(3333);
+//import express from 'express';
+
+//const app = express();
+
+//app.get('/users', (request, response) => {
+    //console.log('Iniciou')
+    //response.send('Hello World');
+    //response.json({message: "Lista de Usuarios"});
+//});
+
+//app.listen(3333);
 ```
 
 ### **Observacoes/Utilitarios**
@@ -32,7 +38,6 @@ app.listen(3333);
 - O *node_modules* armazena as dependencias.
 - **-D** dependencia de desenvolvimento
 - **npx** - executa um pacote instalado
-- `npx ts-node src/server.ts` E o comando utilizado para executar a aplicacao.
 - `npm install ts-node-dev -D` Utilizado para nao ter que ficar reiniciando o servidor a todo momento com o CTRL + C, ele ficara observando a todo momento as mudancas na app.
 
 Como forma melhorada para evitar sempre ficar escrevendo um comando muito grande, segue exemplo de script a ser adicionado no package.json.
