@@ -4,10 +4,11 @@
 
 1. Crie uma pasta [server] e execute os codigos abaixo para instalacao. 
 1. Use `npm init -y` para iniciar um projeto com configuracoes padroes. O package.json contem as informacoes principais do projeto.
+1. Use `npm install express` Para ser possivel trabalhar com aplicacoes web.
 1. Use `npm install typescript -D` para realizar a instalacao do typescript.
+1. Use `npm install ts-node-dev -D`, como o node so "entende" JS, instalamos esta dependencia para ser possivel sua execucao. Com o "-D" porque so sera utilizado enquanto estiver desenvolvendo a aplicacao.
+1. Use `npm install @types/express -D`
 1. Use `npx tsc --init` para criar o arquivo de configuracoes do typescript.
-1. Use `npm install ts-node -D`, como o node so "entende" JS, instalamos esta dependencia para ser possivel sua execucao. Com o "-D" porque so sera utilizado enquanto estiver desenvolvendo a aplicacao.
-1. Use `npm install express -D` Para ser possivel trabalhar com aplicacoes web.
 
 Apos os passos acima realizados, crie uma pasta **src** e um arquivo **server.ts**, com o seguinte conteudo:
 
